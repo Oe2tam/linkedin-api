@@ -145,7 +145,7 @@ class Linkedin(object):
         if nonprofit_interests:
             filters.append(f'nonprofitInterest->{"|".join(nonprofit_interests)}')
         if schools:
-            filters.append(f'schools->{"|".join(schools)}')
+            filters.append(f'school->{"|".join(schools)}')
 
         params = {"filters": "List({})".format(",".join(filters))}
 
